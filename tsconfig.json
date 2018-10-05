@@ -59,7 +59,7 @@
     "./MyDefination/Scanner.ts",
   ],
   "include": [
-    "./Questions/paypal/question1.ts",                     // make changes here for every new file
+    "./Questions/Apostek/questionEasy.ts",                     // make changes here for every new file
   ],
   "exclude": [
     "node_modules"
