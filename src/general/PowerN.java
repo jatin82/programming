@@ -1,4 +1,4 @@
-package com.code.practice.general;
+package general;
 
 
 public class PowerN {

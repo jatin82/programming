@@ -5,7 +5,7 @@
  *  https://www.hackerearth.com/practice/algorithms/graphs/hamiltonian-path/practice-problems/algorithm/fredos-crush-2/
  */
 
-package com.code.practice.general;
+package general;
 
 import java.util.ArrayList;
 import java.util.HashSet;

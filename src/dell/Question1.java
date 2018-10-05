@@ -1,6 +1,6 @@
 //https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/practice-problems/algorithm/bob-and-cities-dfc06921/description/
 
-package com.code.practice.dell;
+package dell;
 
 import java.util.ArrayList;
 import java.util.HashSet;

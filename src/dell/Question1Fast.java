@@ -1,4 +1,4 @@
-package com.code.practice.dell;
+package dell;
 
 public class Question1Fast {
 

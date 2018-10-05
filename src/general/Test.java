@@ -1,4 +1,4 @@
-package com.code.practice.general;
+package general;
 
 import java.util.ArrayList;
 import java.util.HashSet;
