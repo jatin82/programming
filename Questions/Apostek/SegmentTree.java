@@ -1,10 +1,23 @@
 /**
  *
+
+https://www.hackerearth.com/practice/data-structures/advanced-data-structures/segment-trees/practice-problems/algorithm/easy-queries-751f9372/
+
+6 6
+0 0 0 0 0 0
+0 2
+1 2
+1 0
+0 1
+1 5
+0 4
+
+
  */
 import java.io.*;
 import java.util.*;
  
-class apostek1 {
+public class Apostek1 {
  
 	static int[] left, right;
 	static int n;
