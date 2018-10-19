@@ -1,0 +1,90 @@
+<style>
+.Loader {
+    display: inline-block;
+    position: relative;
+    width: 148px;
+    height: 148px;
+    padding: 5px;
+    border-radius: 500px;
+    vertical-align: middle;
+}
+.Loader::after, .Loader::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 5px;
+    border-radius: 50%;
+    content: "";
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+ /* .Loader::after {
+    border: 5px solid transparent;
+        border-top-color: transparent;
+    border-top-color: #139ff0;
+    -webkit-animation: spin 1.0s linear 0s infinite none normal;
+    animation: spin 1.0s linear 0s infinite none normal;
+}  */
+.Loader::before {
+    border: 5px solid transparent;
+        border-top-color: transparent;
+    border-top-color: #139ff0;
+    -webkit-animation: spin 1.0s linear 0s infinite none normal;
+    animation: spin 1.0s linear 0s infinite none normal;
+}
+@keyframes spinOuter{
+	0% {
+	    -webkit-transform: rotate(360deg);
+	    transform: rotate(360deg);
+	}
+	100% {
+	    -webkit-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	}
+}
+@keyframes spin{
+	0% {
+	    -webkit-transform: rotate(0);
+	    transform: rotate(0);
+	}
+	100% {
+	    -webkit-transform: rotate(360deg);
+	    transform: rotate(360deg);
+	}
+}
+
+/* 
+.loader{
+    display: inline-block;
+    position: relative;
+    width: 148px;
+    height: 148px;
+    padding: 5px;
+    border-radius: 500px;
+    vertical-align: middle;
+    border:5px solid blue;
+}
+img{
+    width:inherit;
+} */
+
+</style>
+<body>
+<div class="Loader"><img src="icon.png"/></div>
+<!-- <div class="loader">
+    <img src="icon.png"/>
+</div> -->
+
+
+
+
+</body>
+
+
+
+
+
+
