@@ -70,7 +70,8 @@ public class SegmentTreeMin {
         int q = sc.nextInt();
 
         int [] a = new int[n];
-        int treeSize = (2 * (int)Math.ceil(Math.pow(2,(Math.log(n)/Math.log(2))))) - 1;
+        int treeSize = 2000005;
+        //(2 * (int)Math.ceil(Math.pow(2,(Math.log(n)/Math.log(2))))) - 1;
         int [] tree = new int[treeSize];
 
         
