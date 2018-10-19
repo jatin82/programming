@@ -1,0 +1,7 @@
+.vscode
+.git
+.classpath
+node_modules
+.project
+package-lock.json
+.vscode
