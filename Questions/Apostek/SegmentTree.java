@@ -13,6 +13,14 @@ https://www.hackerearth.com/practice/data-structures/advanced-data-structures/se
 0 4
 
 
+3 4
+0 0 0
+1 0
+0 1
+1 2
+0 1
+
+
  */
 import java.io.*;
 import java.util.*;
