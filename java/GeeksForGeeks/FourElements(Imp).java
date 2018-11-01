@@ -1,4 +1,5 @@
 /*
+
 https://practice.geeksforgeeks.org/problems/four-elements/0
 
 */
@@ -17,14 +18,15 @@ class GFG {
 	        int n = sc.nextInt();
 
 	        int [] a = new int[n];
-	        int [] aux = new int[(n*(n-1)/2)];
+	        int [] aux = new int[ (n*(n-1)/2) ];
+	        int index = 0;
 	        
 	        for(int i=0;i<n;i++){
-	            for(int j=i+1;j<n;j++){
-	                int index = i * (n-1-i) + j;
-	                aux[index] = a[i] + a[j];
+	            for(int j=0;j<n-1-i;j++){
+	                aux[index++] = a[i] + a[j];
 	            }
 	        }
+	        
 	        int x = sc.nextInt();
 	        Arrays.sort(aux);
 	        
@@ -36,7 +38,7 @@ class GFG {
 	        
 	        boolean isFour = false;
 	        
-	        for(int ele:sum){
+	        for(int ele:aux){
 	            if(sum.contains(ele)){
 	                isFour = true;
 	            }
