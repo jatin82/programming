@@ -19,28 +19,36 @@ class GFG {
 
 	        int [] a = new int[n];
 	        int [] aux = new int[ (n*(n-1)/2) ];
-	        int index = 0;
+	        
 	        
 	        for(int i=0;i<n;i++){
-	            for(int j=0;j<n-1-i;j++){
+	            a[i] = sc.nextInt();
+	        }
+	        
+	        int x = sc.nextInt();
+	        
+	        int index = 0;
+	        for(int i=0;i<n;i++){
+	            for(int j=i+1;j<n;j++){
 	                aux[index++] = a[i] + a[j];
 	            }
 	        }
 	        
-	        int x = sc.nextInt();
 	        Arrays.sort(aux);
 	        
-	        Set<Integer> sum = new HashSet<>();
+	        Map<Integer,Integer> sum = new HashMap<>();
 	        
 	        for(int i=0;i<aux.length;i++){
-	            sum.add(x-aux[i]);
+	            sum.put(x-aux[i],i);
 	        }
 	        
 	        boolean isFour = false;
 	        
-	        for(int ele:aux){
-	            if(sum.contains(ele)){
-	                isFour = true;
+	        for(int i=0;i<n;i++){
+	            if(sum.containsKey(aux[i])){
+	                int current = sum.get(aux[i]);
+	                if(i!=current)
+	                    isFour = true;
 	            }
 	        }
 	        
