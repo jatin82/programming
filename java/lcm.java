@@ -4,6 +4,8 @@ class lcm{
 	
 /*
 
+https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/archery-1/description/
+
 1
 2 3 4
 
