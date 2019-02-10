@@ -1,0 +1,60 @@
+Require Java 1.8 and Mysql 5.7
+
+
+1. Create databse fifa and Run dump application to import data from csv to mysql 
+    and provide 
+        ${username}
+        ${password} 
+        ${db_url} in cmd given below
+
+    java -jar Dump-0.0.1-SNAPSHOT.jar --spring.datasource.username=${username} --spring.datasource.password=${password} --upload.dir=/ --spring.datasource.url=${dburl}
+
+2. Import Data using postman with file name CompleteDataset.csv
+
+  curl -X POST \
+  http://localhost:8085/upload \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -H 'Postman-Token: bd5b93c0-9623-42b6-b54c-027d724df056' \
+  -H 'cache-control: no-cache'
+
+3. run data app and provide 
+        ${username}
+        ${password} 
+        ${db_url} in cmd given below
+
+    java -jar DataApp-0.0.1-SNAPSHOT.jar --spring.datasource.username=${username} --spring.datasource.password=${password} --upload.dir=/ --spring.datasource.url=${dburl}
+
+4. run Query app
+java -jar QueryApp-0.0.1-SNAPSHOT.jar
+
+
+5. Get Token jwttoken
+        curl -X POST \
+        http://localhost:8087/token \
+        -H 'Content-Type: application/json' \
+        -H 'Postman-Token: e355a64b-7cdd-4abc-bde7-db36c34ce005' \
+        -H 'cache-control: no-cache' \
+        -H 'jwttoken: eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiYWRtaW4iLCJkYXRlIjoxNTQ5ODAyODMzMjQzLCJuYW1lIjoiaG9tZWxhbmUiLCJwYXNzd29yZCI6InBhc3N3b3JkIn0.X6MIyj9YDqznVP_3GB7rO5m7a5uwAU-91oZ6H5Z4PuAriEc-lNCosZiYRSzXLfzh9sBoj9UPLpVJLHiwbxNLog' \
+        -d '{
+            "userName":"homelane",
+            "password":"password",
+            "role":"admin"
+        }'
+
+6. Every API require jwttoken
+    
+    get Players Info
+        curl -X GET \
+        'http://localhost:8087/api/info?name=Cristiano%20Ronaldo,L.%20Messi' \
+        -H 'Content-Type: application/json' \
+        -H 'Postman-Token: a4fdc22b-d17a-455e-89f3-d51ddf6d7793' \
+        -H 'cache-control: no-cache' \
+        -H 'jwttoken: eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiYWRtaW4iLCJkYXRlIjoxNTQ5ODAyODMzMjQzLCJuYW1lIjoiaG9tZWxhbmUiLCJwYXNzd29yZCI6InBhc3N3b3JkIn0.X6MIyj9YDqznVP_3GB7rO5m7a5uwAU-91oZ6H5Z4PuAriEc-lNCosZiYRSzXLfzh9sBoj9UPLpVJLHiwbxNLog'
+
+    get Players by Club name
+        curl -X GET \
+        'http://localhost:8087/api/info?club=FC%20Bayern%20Munich' \
+        -H 'Content-Type: application/json' \
+        -H 'Postman-Token: 9eb63509-e4e4-4196-96c4-1700058fa455' \
+        -H 'cache-control: no-cache' \
+        -H 'jwttoken: eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiYWRtaW4iLCJkYXRlIjoxNTQ5ODAyODMzMjQzLCJuYW1lIjoiaG9tZWxhbmUiLCJwYXNzd29yZCI6InBhc3N3b3JkIn0.X6MIyj9YDqznVP_3GB7rO5m7a5uwAU-91oZ6H5Z4PuAriEc-lNCosZiYRSzXLfzh9sBoj9UPLpVJLHiwbxNLog'
