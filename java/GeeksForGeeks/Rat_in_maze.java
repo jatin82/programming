@@ -2,6 +2,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
+// https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1
+
+
 /*Complete the function below*/
 public class Test4{
 	
