@@ -58,30 +58,43 @@ function main(input) {
 var Question = (function () {
     function Question(input) {
         this.input = input;
-        this.input = input;
         this.solve();
     }
     Question.prototype.solve = function () {
+        console.log("Running");
         var sc = new Scanner(this.input);
         var testCase = sc.nextInt();
         while (testCase-- > 0) {
             var n = sc.nextInt();
-            var occurance = [];
-            for (var i = 0; i < 10; i++) {
-                occurance.push(0);
+            var a = [];
+            for (var x = 0; x < n; x++) {
+                var _a = sc.nextIntArray(' '), t1 = _a[0], t2 = _a[1], t3 = _a[2], t4 = _a[3], t5 = _a[4];
+                a.push({
+                    t1: t1,
+                    t2: t2,
+                    t3: t3,
+                    t4: t4,
+                    t5: t5,
+                    index: x + 1
+                });
             }
-            var y = n.toString();
-            for (var i = 0; i < y.length; i++) {
-                occurance[parseInt(y.charAt(i))]++;
-            }
-            var count = 0;
-            for (var i = 1; i < 10; i++) {
-                if (occurance[count] < occurance[i]) {
-                    count = i;
+            var teamWon = a.reduce(function (team1, team2) {
+                var score1 = 0;
+                var score2 = 0;
+                team1.t1 > team2.t1 ? score1++ : score2++;
+                team1.t2 > team2.t2 ? score1++ : score2++;
+                team1.t3 > team2.t3 ? score1++ : score2++;
+                team1.t4 > team2.t4 ? score1++ : score2++;
+                team1.t5 > team2.t5 ? score1++ : score2++;
+                if (score1 === score2) {
+                    return team1.index > team2.index ? team2 : team1;
                 }
-            }
-            console.log(count);
+                return score1 > score2 ? team1 : team2;
+            });
+            console.log(teamWon.index);
         }
     };
     return Question;
 }());
+
+main("1\n4\n1 2 3 4 5\n2 4 5 6 7\n1 2 3 4 5\n1 4 2 2 3\n");
