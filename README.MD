@@ -9,5 +9,25 @@
  https://sookocheff.com/post/kafka/kafka-in-a-nutshell/ <br>
  https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e <br>
  https://blog.the-pans.com/different-ways-of-caching-in-distributed-system/ <br>
+ [SOLID PRINCIPLES EXAMPLE] https://www.jrebel.com/blog/solid-principles-in-java <br>
+ 
+ # DBMS
+ [ACID JPA LOCKS] https://vladmihalcea.com/a-beginners-guide-to-acid-and-database-transactions/
+ 
+<b> TO Prevent Immutable CLass from reflection <b> 
+To prevent it, we can take help of SecurityManager, define this method in ReflectionTest and uncomment its calling. This method prevents access check on private fields / methods via reflection.
+
+private static void setSecuritymanager() {
+ 
+    System.setSecurityManager(new SecurityManager() {
+        @Override
+        public void checkPermission(Permission perm) {
+             if (perm.getClass() == ReflectPermission.class && "suppressAccessChecks".equals(perm.getName())) {
+                throw new SecurityException("can't supress AccessChecks");
+            }
+        }
+    });
+}
+Now line nameField.setAccessible(true); throws exception.
  
  <img align="center" src = "https://github.com/jatin82/programming/blob/master/CAP.jpg" width="1000" height="500"/>
