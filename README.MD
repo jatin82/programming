@@ -14,7 +14,7 @@
  # DBMS
  [ACID JPA LOCKS] https://vladmihalcea.com/a-beginners-guide-to-acid-and-database-transactions/
  
-<b> TO Prevent Immutable CLass from reflection <b> 
+<b> TO Prevent Immutable CLass from reflection <b> <br>
 To prevent it, we can take help of SecurityManager, define this method in ReflectionTest and uncomment its calling. This method prevents access check on private fields / methods via reflection.
 
 private static void setSecuritymanager() {
@@ -27,7 +27,7 @@ private static void setSecuritymanager() {
             }
         }
     });
-}
+}<br>
 Now line nameField.setAccessible(true); throws exception.
  
  <img align="center" src = "https://github.com/jatin82/programming/blob/master/CAP.jpg" width="1000" height="500"/>
