@@ -7,4 +7,5 @@
 
 # Important Links
  https://sookocheff.com/post/kafka/kafka-in-a-nutshell/ <br>
- https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e
+ https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e <br>
+ https://blog.the-pans.com/different-ways-of-caching-in-distributed-system/
