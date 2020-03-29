@@ -4,4 +4,6 @@
 [ARRAY] https://www.geeksforgeeks.org/trapping-rain-water/ <br>
 
 
-# https://sookocheff.com/post/kafka/kafka-in-a-nutshell/
+# Important Links
+ https://sookocheff.com/post/kafka/kafka-in-a-nutshell/ <br>
+ https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e
