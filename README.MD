@@ -11,6 +11,9 @@
  https://blog.the-pans.com/different-ways-of-caching-in-distributed-system/ <br>
  [SOLID PRINCIPLES EXAMPLE] https://www.jrebel.com/blog/solid-principles-in-java <br>
  
+ # JAVASCRIPT
+ https://medium.com/javascript-everyday/javascript-theory-promise-vs-observable-d3087bc1239a
+ 
  # DBMS
  [ACID JPA LOCKS] https://vladmihalcea.com/a-beginners-guide-to-acid-and-database-transactions/
  
