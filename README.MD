@@ -10,4 +10,4 @@
  https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e <br>
  https://blog.the-pans.com/different-ways-of-caching-in-distributed-system/ <br>
  
- <img align="center" src = "https://github.com/jatin82/programming/blob/master/CAP.jpg" width="500" height="500"/>
+ <img align="center" src = "https://github.com/jatin82/programming/blob/master/CAP.jpg" width="1000" height="500"/>
