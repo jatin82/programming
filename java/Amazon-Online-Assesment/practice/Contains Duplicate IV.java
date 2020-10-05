@@ -4,7 +4,14 @@ import java.util.Random;
 
 class Solution {
 
-// AMAZON ASKED IN INTERVIEW
+/*
+
+AMAZON ASKED IN INTERVIEW
+
+Given an unsorted array and two integers k and t, find Ai and Aj such that
+|Ai-Aj| == t and |i-j| <= k.
+
+*/
 
     public static void main(String[] args) {
         new Solution().stressTesting();
