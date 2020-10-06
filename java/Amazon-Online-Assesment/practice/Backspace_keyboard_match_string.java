@@ -98,9 +98,9 @@ class Solution {
 
 
     private void stressTesting() {
-        int itr = 50000;
-        int max_n = 500;
-        int max_q_n = 26;
+        int itr = 50000; // number of testcase to run
+        int max_n = 500; // set small value for smaller testcase
+        int max_q_n = 26; // alphabet limit
         Random r = new Random();
         int it = 0;
         while (it < itr) {
