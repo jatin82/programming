@@ -4,7 +4,7 @@
 [ARRAY] https://www.geeksforgeeks.org/maximum-water-that-can-be-stored-between-two-buildings/ <br>
 [ARRAY] https://www.geeksforgeeks.org/trapping-rain-water/ <br>
 [ARRAY]<b>*</b> https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/ <br>
-[ARRAY] https://www.geeksforgeeks.org/minimum-length-subarray-sum-greater-given-value/
+[ARRAY] https://www.geeksforgeeks.org/minimum-length-subarray-sum-greater-given-value/ <br>
 [  DP ]<b>*</b> https://www.geeksforgeeks.org/find-the-maximum-of-all-distances-to-the-nearest-1-cell-from-any-0-cell-in-a-binary-matrix/
 
 # Important Links
