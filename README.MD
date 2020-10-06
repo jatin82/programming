@@ -5,7 +5,7 @@
 [ARRAY] https://www.geeksforgeeks.org/trapping-rain-water/ <br>
 [ARRAY]<b>*</b> https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/ <br>
 [ARRAY] https://www.geeksforgeeks.org/minimum-length-subarray-sum-greater-given-value/
-
+[  DP ]<b>*</b> https://www.geeksforgeeks.org/find-the-maximum-of-all-distances-to-the-nearest-1-cell-from-any-0-cell-in-a-binary-matrix/
 
 # Important Links
  https://sookocheff.com/post/kafka/kafka-in-a-nutshell/ <br>
