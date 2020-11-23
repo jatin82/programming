@@ -7,6 +7,19 @@
 [ARRAY] https://www.geeksforgeeks.org/minimum-length-subarray-sum-greater-given-value/ <br>
 [  DP ]<b>*</b> https://www.geeksforgeeks.org/find-the-maximum-of-all-distances-to-the-nearest-1-cell-from-any-0-cell-in-a-binary-matrix/
 
+# REVISE AGAIN
+
+1. https://www.geeksforgeeks.org/check-if-a-binary-tree-is-subtree-of-another-binary-tree/
+2. https://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/ 
+3. https://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/
+4. https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1
+5. https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/ --->look at the 2 pointer approach
+6. https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
+7. https://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/ 
+8. https://www.geeksforgeeks.org/kth-non-repeating-character/
+10. https://www.geeksforgeeks.org/bottom-view-binary-tree/		
+11. https://www.geeksforgeeks.org/amazon-sde-interview-experience-july20-2019/
+
 # Important Links
  https://sookocheff.com/post/kafka/kafka-in-a-nutshell/ <br>
  https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e <br>
