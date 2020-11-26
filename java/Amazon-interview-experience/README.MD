@@ -6,7 +6,7 @@ https://www.principle.cards/
 
 
 # My Experience
-##1st Round : 
+## 1st Round : 
 Technical - Asked about the current project working<br>
 			1. Redis vs OracleSql <br>
 			2. Why Redis for caching <br>
@@ -14,10 +14,11 @@ Technical - Asked about the current project working<br>
 			4. TPS for db and redis on both functionality <br>
 			5. Consistant Hashing <br>
 			6. Any change in system which is already Designed <br>
+			<img src="https://github.com/jatin82/programming/blob/master/java/Amazon-interview-experience/media/round1.png" width="1000" height="500" align="centre">
 
 Behavioual - 1 LP Question : Tell me about the time when you focused on Quality of the product while delivering the project
 
-##2nd Round :
+## 2nd Round :
 
 <pre>
 Techinal : 
@@ -113,7 +114,9 @@ last() -> maximum O(Log n)
 1 LP Question : [Ownership] Tell me about the time 
 
 
-##3rd Round
+## 3rd Round
+
+<img src="https://github.com/jatin82/programming/blob/master/java/Amazon-interview-experience/media/round3.png" width="1000" height="500" align="centre">
 
 
 
