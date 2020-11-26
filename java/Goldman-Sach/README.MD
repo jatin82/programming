@@ -43,7 +43,7 @@ Median of 2 sorted Arrays<br>
 ### 4rth Round:
 1. Java Question - volatile, Multithreading work in cores, Registers works.<br>
 2. Kafka - Rebalancing, Parititions strategy, Offset works.<br>
-3. Nuts and shells - 
+3. Nuts and bolts - https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem/
 4. Why Goldman Sachs, Why leaving current organization.<br>
 5. 5 Red and 5 blue balls and 2 box, find maximum probablity.<br>
 
