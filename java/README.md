@@ -2,7 +2,7 @@
 
 1. ArrayList initialization
 <pre>
-new ArrayList<Integer>() {
+List<Integer> list = new ArrayList<Integer>() {
         {
         int x = 0 ; add(0); add(9);
     }
