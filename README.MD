@@ -1,3 +1,6 @@
+# SQL TRICKY
+select Departments.Name , COUNT(<b>Employees.Name</b>) from Departments LEFT JOIN Employees on Departments.code = Employees.Department group by Departments.name order by COUNT(*) DESC, Departments.name;
+
 # Problems 
 [ARRAY] https://www.geeksforgeeks.org/find-common-elements-three-sorted-arrays/ <br>
 [ARRAY] https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/ <br>
