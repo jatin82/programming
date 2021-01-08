@@ -1,5 +1,5 @@
 
-###Question 1
+### Question 1 - Check tree is BST
 
     	60
      30       80
@@ -20,7 +20,7 @@ private boolean isValidTree(Node node, int min, int max){
 }
 
 
-###Question 2
+### Question 2 - no of islands
 
 
 {1, 1, 0, 0, 0},
@@ -55,7 +55,7 @@ dfs(int row,int col){
 	}
 }
 
-###Question 3
+### Question 3 - Rectangel maximum Hieght
 
 7 bars of heights {6, 2, 5, 4, 5, 1, 6}
 
