@@ -23,6 +23,24 @@
 10. https://www.geeksforgeeks.org/bottom-view-binary-tree/		
 11. https://www.geeksforgeeks.org/amazon-sde-interview-experience-july20-2019/
 
+hot question
+   <pre>public int findKthLargest(int[] nums, int k) {
+        TreeMap<Integer, Integer> map = new TreeMap<>();
+        int size = 0;
+        for (int i = 0; i < nums.length; i++) {
+            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+            size++;
+            if (size > k) {
+                int min = map.firstKey();
+                map.put(min, map.get(min) - 1);
+                if (map.get(min) == 0) map.remove(min);
+                size--;
+            }
+        }
+        return map.lastKey();
+    }
+    </pre>
+
 # Important Links
  https://sookocheff.com/post/kafka/kafka-in-a-nutshell/ <br>
  https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e <br>
