@@ -53,6 +53,7 @@ https://leetcode.com/problems/kth-largest-element-in-an-array
     public static final int INFO_INT = 20000;
     public static final int DEBUG_INT = 10000;
     public static final int TRACE_INT = 5000;
+    public static final int ALL_INT = Integer.MIN_VALUE;
 
 # Important Links
  https://sookocheff.com/post/kafka/kafka-in-a-nutshell/ <br>
