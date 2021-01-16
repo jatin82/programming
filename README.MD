@@ -24,7 +24,11 @@
 11. https://www.geeksforgeeks.org/amazon-sde-interview-experience-july20-2019/
 
 hot question
-   <pre>public int findKthLargest(int[] nums, int k) {
+Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+https://leetcode.com/problems/kth-largest-element-in-an-array
+
+   <pre>
+   public int findKthLargest(int[] nums, int k) {
         TreeMap<Integer, Integer> map = new TreeMap<>();
         int size = 0;
         for (int i = 0; i < nums.length; i++) {
@@ -37,7 +41,7 @@ hot question
                 size--;
             }
         }
-        return map.lastKey();
+        return map.firstKey();
     }
     </pre>
 
