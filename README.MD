@@ -1,6 +1,9 @@
 # Database Page
 <a href="https://github.com/jatin82/programming/blob/master/db/Readme.md">click here</a>
 
+# Designs
+
+
 # Problems 
 [ARRAY] https://www.geeksforgeeks.org/find-common-elements-three-sorted-arrays/ <br>
 [ARRAY] https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/ <br>
@@ -44,16 +47,6 @@ https://leetcode.com/problems/kth-largest-element-in-an-array
         return map.firstKey();
     }
     </pre>
-    
-    LOG LEVELS
-    
-    public static final int OFF_INT = Integer.MAX_VALUE;
-    public static final int ERROR_INT = 40000;
-    public static final int WARN_INT = 30000;
-    public static final int INFO_INT = 20000;
-    public static final int DEBUG_INT = 10000;
-    public static final int TRACE_INT = 5000;
-    public static final int ALL_INT = Integer.MIN_VALUE;
 
 # Important Links
  https://sookocheff.com/post/kafka/kafka-in-a-nutshell/ <br>
