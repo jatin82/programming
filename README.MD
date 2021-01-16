@@ -2,7 +2,7 @@
 <a href="https://github.com/jatin82/programming/blob/master/db/Readme.md">click here</a>
 
 # Designs
-
+<a href="https://github.com/jatin82/programming/blob/master/logger/README.MD">LOG4J DESIGN</a>
 
 # Problems 
 [ARRAY] https://www.geeksforgeeks.org/find-common-elements-three-sorted-arrays/ <br>
