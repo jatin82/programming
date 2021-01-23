@@ -256,6 +256,7 @@ Solution :
 
 First MS - FrontEnd Service.
 
+<pre>
 1. interface OfferService{
     List<Offer> getAllOffer(CustomerDetails);
 }
