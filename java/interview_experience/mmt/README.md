@@ -287,3 +287,6 @@ interface SubscriptionService{
   SubscriptionResponse subcribe(Offer,)
 }
 </pre>
+
+### Result
+Selected and offered 25 LPA... but asked for 28 LPA
