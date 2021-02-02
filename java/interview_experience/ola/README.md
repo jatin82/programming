@@ -21,15 +21,15 @@ APIService -> Redis -> DB
 1. Throtling -> API_KEY,URL,Request_acceptance, TTL
 2. Property -> API_key,URL
 3. PropertyLoader interface in DB and cache it To redis
-4. Filter in -> URLs
-      4.1 will first check in Redis
-      4.2 Yes then simply generate some Default Response
-      4.3 add the Request count in our redis and update DB
-5. RequestFormater and ResponseFormater Abstract -> predefined methods,
-    abstract - format
-6. PostRequest, PreRequest
-7. IntegrationFilter -> backed Hystrix 
-    7.1 RequestTimeout behaviour it will add iy to Redis and update DB.
+4. Filter in -> URLs<br/>
+      4.1 will first check in Redis<br/>
+      4.2 Yes then simply generate some Default Response<br/>
+      4.3 add the Request count in our redis and update DB<br/>
+5. RequestFormater and ResponseFormater Abstract -> predefined methods,<br/>
+    abstract - format<br/>
+6. PostRequest, PreRequest<br/>
+7. IntegrationFilter -> backed Hystrix <br/>
+    7.1 RequestTimeout behaviour it will add iy to Redis and update DB.<br/>
 
 
 <pre>
