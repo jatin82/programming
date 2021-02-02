@@ -67,7 +67,7 @@ class SINGLETON{
       3.8 How to handle large history of Data.<br/>
       3.9 How to handle load of data.<br/>
 4. General Discussion about OLA vision.<br/>
-<img href="https://github.com/jatin82/programming/blob/master/java/interview_experience/ola/OLA-28-01-2021.png"></img>
+<img src="https://github.com/jatin82/programming/blob/master/java/interview_experience/ola/OLA-28-01-2021.png"/>
 
 ## Round 4 - HM
 
