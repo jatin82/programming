@@ -83,4 +83,3 @@ class SINGLETON{
 
 Result - Selected, but didn't got call due to High Salary Expecations ( 34 LPA)
 
-
