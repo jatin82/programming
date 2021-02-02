@@ -57,16 +57,16 @@ class SINGLETON{
 1. Asked about the project
 2. Design a Credit Card System which collects data from Vendors and process limits
 3. Follow ups :
-      3.1 Multiple Classes can be there for Data
-      3.2 Data Processing vs Thread Processing
-      3.3 Correct Class Design names
-      3.4 HLD - which Database and Why?
-      3.5 Cassandra key size limit ?
-      3.6 S3 for storage of large files
-      3.7 Database Design for Scalability - Partition strategy.
-      3.8 How to handle large history of Data.
-      3.9 How to handle load of data.
-4. General Discussion about OLA vision.
+      3.1 Multiple Classes can be there for Data<br/>
+      3.2 Data Processing vs Thread Processing<br/>
+      3.3 Correct Class Design names<br/>
+      3.4 HLD - which Database and Why?<br/>
+      3.5 Cassandra key size limit ?<br/>
+      3.6 S3 for storage of large files<br/>
+      3.7 Database Design for Scalability - Partition strategy.<br/>
+      3.8 How to handle large history of Data.<br/>
+      3.9 How to handle load of data.<br/>
+4. General Discussion about OLA vision.<br/>
 
 ## Round 4 - HM
 
