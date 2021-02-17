@@ -90,14 +90,7 @@ public List<Integer> maxElementTree(Node node){
 </pre>
 
 
-<pre> hashcode - 34 
-
-size = 10
-
-34 % 10 -> bucket
-
-4 -> key  
-equals
+<pre> HASHMAP WORKING EXPLAIN
 </pre>
 
 ## ROUND 2
