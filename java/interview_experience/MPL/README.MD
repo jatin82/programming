@@ -90,7 +90,7 @@ public List<Integer> maxElementTree(Node node){
 </pre>
 
 
-hashcode - 34 
+<pre> hashcode - 34 
 
 size = 10
 
@@ -98,6 +98,7 @@ size = 10
 
 4 -> key  
 equals
+</pre>
 
 ## ROUND 2
 
