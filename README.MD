@@ -25,6 +25,7 @@
 8. https://www.geeksforgeeks.org/kth-non-repeating-character/
 10. https://www.geeksforgeeks.org/bottom-view-binary-tree/		
 11. https://www.geeksforgeeks.org/amazon-sde-interview-experience-july20-2019/
+12. https://leetcode.com/problems/lru-cache/ [ LRU CACHE IMPLEMENTATION ]
 
 hot question
 Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
