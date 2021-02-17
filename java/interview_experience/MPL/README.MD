@@ -14,7 +14,7 @@ i > i+1
 
 7 8 1 2 3 5 6
 
-
+<pre>
 1. mid < mid+1 && mid < mid-1 return mid
 
 2. mid < a[a.length-1] move towards left side of array
@@ -42,6 +42,8 @@ public int find(int [] a){
 	}
 	return a[mid];
 }
+</pre>
+
 ///////////////////////////////////////////
 
 ### You need to find the maximum node at each level and print it.
@@ -52,15 +54,16 @@ public int find(int [] a){
 	10		3		1	
 
 
+Output :
 50
 15
 10
 
+<pre>
 1. use bfs -
 2. max add to list
 3. return list
 
-<pre>
 public List<Integer> maxElementTree(Node node){
 
 	if(node==null) return Collections.EMPTY_LIST:
