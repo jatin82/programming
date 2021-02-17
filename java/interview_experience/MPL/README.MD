@@ -59,7 +59,7 @@ Output :
 15
 10
 
-<pre>
+
 1. use bfs -
 2. max add to list
 3. return list
@@ -87,7 +87,7 @@ public List<Integer> maxElementTree(Node node){
 	}
 	return list;
 }
-</pre>
+
 
 
 <pre> HASHMAP WORKING EXPLAIN
