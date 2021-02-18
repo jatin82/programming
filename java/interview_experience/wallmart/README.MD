@@ -345,7 +345,31 @@ class LRUCacheHelper<K,V>{
  Code failing on leetcode base test case
  
  ## ROUND 3 : HM
- to be update...
+ 
+ 
+ class Solution {
+
+    public static void main(String[] args) {
+        String out = printMissingNum(new int[]{0,1,3,10,15,16,37,39,88,94});
+        System.out.println(out);
+    }
+
+    public static String printMissingNum(int a[]){
+        int prev = -1;
+        StringBuilder out = new StringBuilder();
+        for(int i=0;i<a.length;i++){
+            if((prev+1)<a[i]){
+                int start = prev + 1;
+                int last = a[i]-1;
+                if(start==last) out.append(String.valueOf(start));
+                else out.append(start+"-"+last);
+                out.append(",");
+            }
+            prev = a[i];
+        }
+        return out.toString();
+    }
+}
  
  
  
