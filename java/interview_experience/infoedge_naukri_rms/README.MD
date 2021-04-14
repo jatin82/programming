@@ -26,7 +26,7 @@
 1. Working of Lift in multiple floors.
 2. Question related to System Design.
 
-<img src="" />
+<img src="https://github.com/jatin82/programming/blob/master/java/interview_experience/infoedge_naukri_rms/round3.png" />
 
 ## Round 5
 
