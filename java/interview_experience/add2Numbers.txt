@@ -1,0 +1,18 @@
+String [][] testCases = new String[][]{
+            { "15","26","41" },
+            { "99","10","109" }
+            ,
+            { "12","9999","10011" }
+            ,
+            { "","88","88" }
+            
+        };
+        
+        for(String [] test : testCases){
+            String s3 = add(test[0],test[1]);
+            if(s3.equals(test[2])){
+                System.out.println("PASSED");
+            } else {
+                System.out.println("FAILED :: expected="+test[2]+" actual="+s3);
+            }
+        }
