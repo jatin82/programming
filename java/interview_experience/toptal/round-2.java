@@ -68,47 +68,46 @@ Weekday = "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday", "S
 
     public static int solution(int year, String startMonth, String endMoth, String weekday) {
         Calendar startCal = Calendar.getInstance();
-        startCal.set(Calendar.YEAR,year);
-        startCal.set(Calendar.MONTH,getMonth(startMonth)-1);
+        startCal.set(Calendar.YEAR, year);
+        startCal.set(Calendar.MONTH, getMonth(startMonth));
         startCal.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
         startCal.set(Calendar.DAY_OF_WEEK_IN_MONTH, 1);
         int startWeak = startCal.get(Calendar.WEEK_OF_YEAR);
 
         Calendar endCal = Calendar.getInstance();
-        endCal.set(Calendar.YEAR,year);
-        endCal.set(Calendar.MONTH,getMonth(endMoth)-1);
-        endCal.set(Calendar.DAY_OF_WEEK,Calendar.SUNDAY);
+        endCal.set(Calendar.YEAR, year);
+        endCal.set(Calendar.MONTH, getMonth(endMoth));
+        endCal.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY);
         endCal.set(Calendar.DAY_OF_WEEK_IN_MONTH, -1);
 
         int endWeak = endCal.get(Calendar.WEEK_OF_YEAR);
+        if (getWeek(weekday) < Calendar.SUNDAY) endWeak--;
         return endWeak - startWeak;
     }
 
-    private static int getMonth(String month){
-        if(month.equals("January")) return 1;
-        else if(month.equals("February")) return 2;
-        else if(month.equals("March")) return 3;
-        else if(month.equals("April")) return 4;
-        else if(month.equals("May")) return 5;
-        else if(month.equals("June")) return 6;
-        else if(month.equals("July")) return 7;
-        else if(month.equals("August")) return 8;
-        else if(month.equals("September")) return 9;
-        else if(month.equals("October")) return 10;
-        else if(month.equals("November")) return 11;
-        else if(month.equals("December")) return 12;
-        return -1;
+    private static int getMonth(String month) {
+        if (month.equals("January")) return Calendar.JANUARY;
+        else if (month.equals("February")) return Calendar.FEBRUARY;
+        else if (month.equals("March")) return Calendar.MARCH;
+        else if (month.equals("April")) return Calendar.APRIL;
+        else if (month.equals("May")) return Calendar.MAY;
+        else if (month.equals("June")) return Calendar.JUNE;
+        else if (month.equals("July")) return Calendar.JULY;
+        else if (month.equals("August")) return Calendar.AUGUST;
+        else if (month.equals("September")) return Calendar.SEPTEMBER;
+        else if (month.equals("October")) return Calendar.OCTOBER;
+        else if (month.equals("November")) return Calendar.NOVEMBER;
+        else return Calendar.DECEMBER;
     }
 
-    private static int getWeek(String week){
-        if(week.equals("Monday")) return Calendar.MONDAY;
-        else if(week.equals("Tuesday")) return Calendar.TUESDAY;
-        else if(week.equals("Wednesday")) return Calendar.WEDNESDAY;
-        else if(week.equals("Thursday")) return Calendar.THURSDAY;
-        else if(week.equals("Friday")) return Calendar.FRIDAY;
-        else if(week.equals("Saturday")) return Calendar.SATURDAY;
-        else if(week.equals("Sunday")) return Calendar.SUNDAY;
-        return -1;
+    private static int getWeek(String week) {
+        if (week.equals("Monday")) return Calendar.MONDAY;
+        else if (week.equals("Tuesday")) return Calendar.TUESDAY;
+        else if (week.equals("Wednesday")) return Calendar.WEDNESDAY;
+        else if (week.equals("Thursday")) return Calendar.THURSDAY;
+        else if (week.equals("Friday")) return Calendar.FRIDAY;
+        else if (week.equals("Saturday")) return Calendar.SATURDAY;
+        else return Calendar.SUNDAY;
     }
 
     public static boolean solution4(int n, int[] a, int[] b) {
