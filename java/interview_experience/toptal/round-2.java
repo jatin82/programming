@@ -47,6 +47,24 @@ public class Q1 {
 
         return sb.toString();
     }
+    
+    /*
+Ritam is planning for a vacation to Salasar, Rajasthan. The train for going to Salasar is only available for Monday and 
+for coming back from Salasar to his hometown is Sunday. Ritam has start month and end month, and last weekday of end month. 
+Consider that her vacation starts on the 1st day of the start month and ends on the last weekday of the end month. 
+Find the maximum number of weeks she can stay in Salasar and come back before her end month last weekday.
+
+
+Example:
+
+Given Year = 2014 , start month = "April" , end Month = "May" and weekday = "Wednesday"
+Total number of weeks = 7
+
+Format 
+Months = "January", February", "March", "April", "May", "June" "July", "August", "September", "October", "November", "December"
+Weekday = "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday", "Sunday"
+
+    */
 
     public static int solution(int year, String startMonth, String endMoth, String weekday) {
         Calendar startCal = Calendar.getInstance();
