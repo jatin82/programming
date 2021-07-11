@@ -50,24 +50,24 @@ TestCase
 
         for (int i = 1; i <= n; i++) {
             dp[i] = dp[i - 1] + a[i - 1];
-            int x = i - 2;
-            int y = i - 1;
-            while (check(a, x, y)) {
+            removeConsecutive(a, i - 2, i - 1, i, dp, false);
+            removeConsecutive(a, i - 2, i - 3, i, dp, true);
+        }
+        return Math.abs(dp[n]);
+    }
+
+    private static void removeConsecutive(int[] a, int x, int y, int i, int[] dp, boolean includeAi) {
+        while (check(a, x, y)) {
+            if (includeAi) {
+                if (Math.abs(dp[y] + a[i - 1]) > Math.abs(dp[i])) dp[i] = dp[y] + a[i - 1];
+            } else {
                 if (Math.abs(dp[x]) > Math.abs(dp[i])) {
                     dp[i] = dp[x];
                 }
-                x--;
-                y--;
             }
-            x = i - 2;
-            y = i - 3;
-            while (check(a, x, y)) {
-                if (Math.abs(dp[y] + a[i - 1]) > Math.abs(dp[i])) dp[i] = dp[y] + a[i - 1];
-                x--;
-                y--;
-            }
+            x--;
+            y--;
         }
-        return Math.abs(dp[n]);
     }
 
     private static boolean check(int[] a, int x, int y) {
